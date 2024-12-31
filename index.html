@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Wishes</title>
+    <style>
+        /* Inline CSS - Styling for the body and text */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Background Blue Color */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: blue; /* Solid blue color */
+            z-index: -1; /* Keep background behind all content */
+        }
+
+        /* Container for images displayed in a row */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Increased space between images */
+            margin-top: 20px;
+        }
+
+        /* Styling for the photos */
+        .friend-photo {
+            width: 120px; /* Smaller size for images */
+            height: auto; /* Maintain the aspect ratio */
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect for images */
+        .friend-photo:hover {
+            transform: scale(1.1); /* Slightly zoom in on hover */
+        }
+
+        /* Header and footer styling */
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white;
+            padding: 1em;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Music (Gana) -->
+    <audio autoplay loop>
+        <source src="background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Background Blue Color Effect -->
+    <div class="background">
+        <!-- Content below will appear above the blue background -->
+    </div>
+
+    <header>
+        <h1>Happy New Year 2025! Ankit loves Savita loves Himanshu</h1> <!-- Updated year to 2025 -->
+    </header>
+
+    <main>
+        <!-- Images displayed in a row with smaller size -->
+        <div class="image-container">
+            <!-- Ankit's photo -->
+            <img src="ankit.png" alt="Ankit's Photo" class="friend-photo">
+            <!-- Himanshu's photo -->
+            <img src="Himanshu.png" alt="Himanshu's Photo" class="friend-photo">
+            <!-- Girl's photo -->
+            <img src="girl.png" alt="Girl's Photo" class="friend-photo">
+        </div>
+
+        <p class="message">Wishing you endless joy and success in 2025!</p> <!-- Updated year to 2025 -->
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for Ankit and Himanshu</p>
+    </footer>
+</body>
+</html>
